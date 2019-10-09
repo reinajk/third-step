@@ -52,22 +52,36 @@ int main()
     printf("平均値:%f 標準偏差:%f 合計点:%f\n", sci_ave, sci_dev, sci_total);
     printf("偏差値:\n");
     for(i = 0; i < 20; i++){
-        printf("%f\n", sci_dev_value[i]);
-    }
-    printf("点数の降順ソート:\n");
-    for(i = 0; i < 20; i++){
-        printf("%f\n", sci[i]);
+        printf("%f  ", sci_dev_value[i]);
+        if((i + 1) % 4 == 0){
+            printf("\n");
+        } 
     }
     printf("\n");
+    printf("点数の降順ソート:\n");
+    for(i = 0; i < 20; i++){
+        printf("%f  ", sci[i]);
+        if((i + 1) % 4 == 0){
+            printf("\n");
+        }
+    }
+    printf("\n\n");
     printf("[英語]\n");
     printf("平均値:%f 標準偏差:%f 合計点:%f\n", eng_ave, eng_dev, eng_total);
     printf("偏差値:\n");
     for(i = 0; i < 20; i++){
-        printf("%f\n", eng_dev_value[i]);
+        printf("%f  ", eng_dev_value[i]);
+        if((i + 1) % 4 == 0){
+            printf("\n"); 
+        }
     }
+    printf("\n");
     printf("点数の降順ソート:\n");
     for(i = 0; i < 20; i++){
-        printf("%f\n", eng[i]);
+        printf("%f  ", eng[i]);
+        if((i + 1) % 4 == 0){
+            printf("\n"); 
+        }
     }
     
     return 0;
